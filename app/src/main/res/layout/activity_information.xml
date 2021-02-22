@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+    <ImageView
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/icon_dance"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/information_name"
+        android:id="@+id/information_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:tint="#70614E" />
+
+    <TextView
+        android:layout_marginRight="30dp"
+        android:textColor="#70614E"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="헬스장"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:layout_constraintLeft_toRightOf="@+id/information_icon"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/information_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/information_contents"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textColor="#70614E"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toBottomOf="@id/information_icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="."
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:id="@+id/list"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        app:layout_constraintHorizontal_bias="0.32"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="목록으로 돌아가기"
+        android:textSize="10dp"
+        android:textColor="#70614E"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        app:layout_constraintHorizontal_bias="0.68"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="카카오톡 공유하기"
+        android:textSize="10dp"
+        android:textColor="#70614E"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.gms.ads.AdView
+        ads:layout_constraintBottom_toBottomOf="parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5329828677760196/8529628493"
+        tools:ignore="MissingConstraints">
+    </com.google.android.gms.ads.AdView>
+
+
+    <TextView
+        android:id="@+id/basic"
+        android:textSize="18dp"
+        app:layout_constraintVertical_bias="0.6"
+        android:gravity="center_horizontal"
+        android:alpha="0.6"
+        android:text="※ 기본 방역 수칙 이란?"
+         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         android:textStyle="bold"
+        android:textColor="#70614E"
+         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:alpha="0.6"
+        android:text="마스크 착용, 출입자 명단관리, 환기/소독 수칙 의무화"
+        app:layout_constraintTop_toBottomOf="@+id/basic"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

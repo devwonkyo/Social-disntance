@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:alpha="0.4"
+        android:src="@drawable/distance"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/text"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        android:text="사회적 거리두기 지침이 궁금한 단계를 선택하세요."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/step"
+        app:layout_constraintTop_toTopOf="@id/text"
+        app:layout_constraintBottom_toTopOf="@id/phase1"
+        android:id="@+id/text2"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        android:text="현재 수도권은"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintEnd_toStartOf="@+id/text3"
+        app:layout_constraintTop_toTopOf="@id/text"
+        app:layout_constraintBottom_toTopOf="@id/phase1"
+        android:id="@+id/step"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#b7410e"
+        android:text=" 2.5단계 "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/step"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text"
+        app:layout_constraintBottom_toTopOf="@id/phase1"
+        android:id="@+id/text3"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        android:text="입니다."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text"
+        app:layout_constraintBottom_toTopOf="@+id/phase1_5"
+
+        android:id="@+id/phase1"
+        android:textStyle="bold"
+        android:text="1단계"
+        android:background="@drawable/button_conner"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phase1"
+        app:layout_constraintBottom_toTopOf="@+id/phase2"
+        app:layout_goneMarginTop="30dp"
+        android:id="@+id/phase1_5"
+        android:text="1.5단계"
+        android:background="@drawable/button_conner"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phase1_5"
+        app:layout_constraintBottom_toTopOf="@+id/phase2_5"
+        app:layout_goneMarginTop="30dp"
+        android:id="@+id/phase2"
+        android:text="2단계"
+        android:background="@drawable/button_conner"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phase2"
+        app:layout_constraintBottom_toTopOf="@+id/phase3"
+        app:layout_goneMarginTop="30dp"
+        android:id="@+id/phase2_5"
+        android:text="2.5단계"
+        android:background="@drawable/button_conner"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <Button
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phase2_5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginTop="30dp"
+        android:id="@+id/phase3"
+        android:text="3단계"
+        android:background="@drawable/button_conner"
+        android:textColor="#ffffff"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints"></Button>
+
+    <TextView
+        android:id="@+id/basic"
+        android:textSize="18dp"
+        app:layout_constraintVertical_bias="0.2"
+        android:gravity="center_horizontal"
+        android:alpha="0.6"
+        android:text="※ 기본 방역 수칙 이란?"
+        app:layout_constraintTop_toBottomOf="@+id/phase2"
+        app:layout_constraintBottom_toTopOf="@+id/phase2_5"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:gravity="center_horizontal"
+        android:alpha="0.6"
+        android:text="마스크 착용, 출입자 명단관리, 환기/소독 수칙 의무화"
+        app:layout_constraintTop_toBottomOf="@+id/basic"
+        app:layout_constraintBottom_toTopOf="@+id/phase2_5"
+        android:textStyle="bold"
+        android:textColor="#70614E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.gms.ads.AdView
+        ads:layout_constraintBottom_toBottomOf="parent"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5329828677760196/8529628493"
+        tools:ignore="MissingConstraints">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "93657989342",
+    "firebase_url": "https://socialproject-3dd53-default-rtdb.firebaseio.com",
+    "project_id": "socialproject-3dd53",
+    "storage_bucket": "socialproject-3dd53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93657989342:android:64d0baab995920d0aac24f",
+        "android_client_info": {
+          "package_name": "com.gardeng.socialproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93657989342-8a0q74cq59863rl3uc0ja98f9915cv37.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialproject",
+            "certificate_hash": "aa0f469a11104442b08bedb8b15e12692d31fe75"
+          }
+        },
+        {
+          "client_id": "93657989342-lqvskgj82ojbikt5uds4ijesl3boo8r6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfmB7ZWaLaIlakGflSZIt29Gh5VJR38wA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93657989342-lqvskgj82ojbikt5uds4ijesl3boo8r6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
